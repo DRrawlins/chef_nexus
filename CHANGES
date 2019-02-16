@@ -1,3 +1,12 @@
+Version 0.2.0:
+ - metadata bump
+ - added in templates, files and attributes for nexus dynamicness
+ - initial commit of nexus setup recipes
+ - added a inspec test
+ - quality of life changes
+ - added in some spec testing
+ - added chefspec to Gemfile
+
 Version 0.1.0
  - initial commit of generically generated and needed files
  - added in README

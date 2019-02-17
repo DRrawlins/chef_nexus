@@ -1,8 +1,9 @@
 nexus_user = node['chef_nexus']['nexus_user']
 nexus_group = node['chef_nexus']['nexus_group']
+n_log_dir_file = File.join(node['chef_nexus']['nexus_log_dir'], node['chef_nexus']['nexus_log_dir_file'])
 
-cookbook_file '/etc/systemd/system/nexus.service' do
-  source 'nexus.service'
+cookbook_file node['chef_nexus']['nexus_service'] do
+  source node['chef_nexus']['nexus_service_cb_file']
   owner nexus_user
   group nexus_group
   mode '0644'
@@ -10,7 +11,7 @@ cookbook_file '/etc/systemd/system/nexus.service' do
   action :create
 end
 
-directory '/var/log/nexus' do
+directory node['chef_nexus']['nexus_log_dir'] do
   owner nexus_user
   group nexus_group
   mode '0640'
@@ -18,7 +19,7 @@ directory '/var/log/nexus' do
   action :create
 end
 
-file '/var/log/nexus/nexus.log' do
+file n_log_dir_file do
   owner nexus_user
   group nexus_group
   mode '0755'

@@ -1,3 +1,31 @@
+Version 0.2.1:
+ - metadata bump
+ - added some inspec tests
+ - few typs and fixes for service recipe
+ - moved and added some attributes
+ - Version bump to 0.2.0
+ - Version bump to 0.2.0
+ - metadata bump
+ - metadata bump
+ - added in templates, files and attributes for nexus dynamicness
+ - added in templates, files and attributes for nexus dynamicness
+ - initial commit of nexus setup recipes
+ - initial commit of nexus setup recipes
+ - added a inspec test
+ - added a inspec test
+ - quality of life changes
+ - quality of life changes
+ - added in some spec testing
+ - added in some spec testing
+ - added chefspec to Gemfile
+ - added chefspec to Gemfile
+ - Added VERSION and CHANGES files, Version bump to v0.1.0
+ - Added VERSION and CHANGES files, Version bump to v0.1.0
+ - initial commit of generically generated and needed files
+ - initial commit of generically generated and needed files
+ - added in README
+ - added in README
+
 Version 0.2.0:
  - metadata bump
  - added in templates, files and attributes for nexus dynamicness
